@@ -1,0 +1,35 @@
+$width: 960px;
+
+body{
+	background: #f2f2f2;
+	color: #333;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+a{
+	color: #00C2F3;
+	&:hover{
+		color: #f2f2f2;
+	} 
+}
+
+#header{
+	width: $width;
+	height: 60px;
+	background: #333;
+	color: #f2f2f2;
+	margin: auto;	
+}
+
+#wrapper{
+	width: $width;
+	margin: auto;
+}
+
+#footer{
+	width: $width;
+	margin: auto;
+	text-align: center;
+}
+

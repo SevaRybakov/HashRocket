@@ -1,0 +1,29 @@
+.left
+#content
+	- if flash[:notice] or flash[:warning]
+		#notice
+			= flash[:notice]
+	%h1{:class => 'person'}
+		= @user.name
+		= @user.surname
+		- if current_user == @user
+			(It's you)
+	#profile-info 
+		- if !@profile.gender.nil?
+			- if @profile.gender
+				%span{:class => 'gender-male'} Male
+			- else
+				%span{:class => 'gender-female'} Female
+				
+		- if @profile.city
+			%span{:class => 'city'} 
+				From
+				= @profile.city
+				
+		- if @profile.date_of_birth
+			%span{:class => 'birthday'} 
+				Birthday: 
+				= @profile.date_of_birth.strftime("%d %B %Y")
+				
+		- if current_user == @user
+			= link_to 'Edit your profile', '/edit'

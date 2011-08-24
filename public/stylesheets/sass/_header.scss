@@ -1,0 +1,84 @@
+#top_bar{
+	padding-top:8px;
+	height: 32px;
+	background: $base-dark;
+	border-bottom: #000 1px solid;
+}
+
+header{
+	width: $width;
+	margin: auto;
+	
+	.head{
+		margin-left: $left-width;
+		height: 100%;
+		background-color: lighten($base-dark, 10%);
+	}
+	
+	a{
+		text-decoration: none;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		&:hover{
+			background-color: lighten($base-dark, 10%);
+		}
+	}
+	
+}
+
+.left{
+	width: $left-width;
+	float: left;
+}
+
+#logo{
+	display: block;
+	width: 140px;
+	float: left;
+	text-align: center;
+	color: #f5fcff;
+	font-size: 24px;
+}
+
+ul#navbar{
+	display: block;
+	li{
+		padding-left: 2px;
+		float: left;
+	}
+}
+
+.notification-balloon{
+	z-index: -100;
+	color: #fff;
+	font-size: 12px;
+	margin-top: -2px;
+	text-align: right;
+}
+
+#settings-link{
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url('../images/settings-ico.png') no-repeat;
+	background-position-x: center;
+	background-position-y: 2px;
+}
+
+#friendship-link{
+	display: block;
+	width: 38px;
+	height: 24px;
+	background: url('../images/friendship-ico.png') no-repeat;
+	background-position-y: 2px;
+	background-position-x: 1px;
+}
+
+#logout-link{
+	display: block;
+	width: 30px;
+	height: 24px;
+	background: url('../images/logout-ico.png') no-repeat;
+	background-position-y: 2px;
+	background-position-x: center;
+}

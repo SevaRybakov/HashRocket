@@ -1,0 +1,31 @@
+h1.person{
+	padding-left: 60px;
+	background: url('../images/person.png') no-repeat;
+}
+
+#profile-info{
+	margin-top: 10px;
+	font-size: 16px;
+	color: $info;
+	span{
+		background-position-y: center;
+		padding-left: 20px;
+		margin-right: 10px;
+	}
+}
+
+.gender-male{
+	background: url('../images/male-ico.png') no-repeat;
+}
+
+.gender-female{
+	background: url('../images/female-ico.png') no-repeat;
+}
+
+.city{
+	background: url('../images/city-ico.png') no-repeat;
+}
+
+.birthday{
+	background: url('../images/calendar-ico.png') no-repeat;
+}

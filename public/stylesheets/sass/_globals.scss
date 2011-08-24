@@ -1,0 +1,28 @@
+$width: 960px;
+$left-width: 240px;
+
+$base-light: #f0f0f0;
+$base-dark: #313337;
+$big-header: #d2d2d2;
+$info: #494c52;
+$link-color: #47a9d9;
+
+body{
+	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+	background: $base-light;
+}
+
+h1, h2, h3{
+	color: $big-header;
+}
+
+h1{
+	font-size: 36px;
+	padding-bottom: 12px;
+}
+
+a{
+	color: $link-color;
+	text-decoration: underline;
+	padding: 0px;
+}

@@ -1,0 +1,14 @@
+#wrapper{
+	padding-top: 24px;
+	width: $width;
+	margin: auto;
+}
+
+#sidebar{
+	width: $left-width;
+	float: left;
+}
+
+#content{
+	margin-left: $left-width;
+}

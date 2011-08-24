@@ -1,0 +1,12 @@
+#top_bar
+	%header
+		.left
+			= link_to 'HashRocket', root_url, :id => 'logo'
+			%ul{:id => 'navbar'}
+				%li
+					%a{:id => 'friendship-link', :href => '#'}
+						.notification-balloon +3
+				%li
+					%a{:id => 'settings-link', :href => '#'}
+				%li
+					= link_to "", destroy_user_session_path, :id => "logout-link"
