@@ -28,6 +28,7 @@ group :development, :test do
   
   gem 'cucumber-rails'
   gem 'capybara'
+  gem "capybara-webkit"
   gem 'launchy'
   gem 'rspec-rails'
   gem 'shoulda'
