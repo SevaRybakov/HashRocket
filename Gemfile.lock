@@ -109,9 +109,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.3)
-    mysql2 (0.2.13)
     nokogiri (1.5.0)
     orm_adapter (0.0.5)
+    pg (0.11.0)
     polyglot (0.3.2)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -192,7 +192,7 @@ DEPENDENCIES
   hpricot
   jquery-rails
   launchy
-  mysql2 (~> 0.2.6)
+  pg
   rails (= 3.0.9)
   rspec-rails
   ruby_parser

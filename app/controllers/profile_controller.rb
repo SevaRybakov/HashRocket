@@ -2,10 +2,13 @@ class ProfileController < ApplicationController
   respond_to :html
   
   before_filter :authenticate_user!, :get_user
-  before_filter :check_access, :only => [:edit, :update]
   
   
   def show
+    if params[:id]
+      @user = User.find params[:id]
+    end
+      
   end
   
   def edit
@@ -17,14 +20,4 @@ class ProfileController < ApplicationController
     end
   end
   
-  private 
-  
-  def get_user
-    @user = current_user
-    @profile = @user.profile
-  end
-  
-  def check_access
-    redirect_to root_path unless current_user == @user
-  end
 end

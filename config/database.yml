@@ -1,25 +1,19 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
-  reconnect: false
   database: hash_rocket_development
-  pool: 5
-  username: root
+  username: developer
   password:
-  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
-  reconnect: false
   database: hash_rocket_test
-  pool: 5
-  username: root
+  username: developer
   password:
-  socket: /tmp/mysql.sock
 
 production:
   adapter: mysql2

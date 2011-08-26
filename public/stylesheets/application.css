@@ -64,8 +64,7 @@ header {
   margin: auto; }
   header .head {
     margin-left: 240px;
-    height: 100%;
-    background-color: #494c52; }
+    height: 100%; }
   header a {
     text-decoration: none;
     padding-top: 4px;
@@ -102,7 +101,8 @@ ul#navbar {
   display: block;
   width: 26px;
   height: 24px;
-  background: url("../images/settings-ico.png") no-repeat;
+  background-image: url("../images/settings-ico.png");
+  background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 2px; }
 
@@ -110,7 +110,8 @@ ul#navbar {
   display: block;
   width: 38px;
   height: 24px;
-  background: url("../images/friendship-ico.png") no-repeat;
+  background-image: url("../images/friendship-ico.png");
+  background-repeat: no-repeat;
   background-position-y: 2px;
   background-position-x: 1px; }
 
@@ -118,7 +119,8 @@ ul#navbar {
   display: block;
   width: 30px;
   height: 24px;
-  background: url("../images/logout-ico.png") no-repeat;
+  background-image: url("../images/logout-ico.png");
+  background-repeat: no-repeat;
   background-position-y: 2px;
   background-position-x: center; }
 
