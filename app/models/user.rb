@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
            :conditions => { :is_confirmed => false }
   
   has_many :wanted_friends, :through => :wanted_friendships, 
-           :source => :user
+           :source => :friend
   
   # 3) potential friends
   # (those who have sent friendship request to our user ).
