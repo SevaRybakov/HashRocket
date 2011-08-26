@@ -4,7 +4,20 @@ class Friendship < ActiveRecord::Base
   
   validates_presence_of :user_id
   validates_presence_of :friend_id
+  validates_uniqueness_of :user_id, scope => [ :friend_id ]
   
+  private #################################################################
+  
+  def create_inverse_friendship_on_approval
+    if is_confirmed
+      Friendship.create :user_id => self.friend_id, :friend_id => self.user_id,
+                        :is_confirmed => true
+    end
+  end
+  
+  def delete_inverse_friendship
+    #TODO: write me
+  end
   
 end
 

@@ -13,10 +13,12 @@ describe User do
   it "should be able to send friendship request to other user" do
     john = Factory.create( :user, :email => 'john.doe@hashrocket.com')
     mark = Factory.create( :user, :email => 'mark@fb.com')
-    Friendship.create( :user => john, :friend => mark )
+    request = Friendship.create( :user => john, :friend => mark )
     
     john.wanted_friends.should include mark
     mark.potential_friends.should include john
+    
+    
   end
   
   

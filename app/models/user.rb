@@ -20,7 +20,8 @@ class User < ActiveRecord::Base
   # 3) potential friends
   # (those who have sent friendship request to our user ).
   has_many :friendship_requests, :class_name => "Friendship", 
-                                 :foreign_key => "friend_id"
+           :foreign_key => "friend_id",
+           :conditions => { :is_confirmed => false }
   has_many :potential_friends, :through => :friendship_requests,
                              :source => :user
   
