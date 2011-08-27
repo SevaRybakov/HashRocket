@@ -4,10 +4,9 @@ class User < ActiveRecord::Base
   # Friendship associations
   
   # 1) actual friends;
-  has_many :friendships,
-           :conditions => { :is_confirmed => true }
-
-  has_many :friends, :through => :friendships
+  has_many :friendships
+  has_many :friends, :through => :friendships, 
+                     :conditions => { :is_confirmed => true }
   
   # 2) wanted friends 
   # (the people our user has sent friendship request to);
@@ -39,7 +38,10 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,
                                      :name, :surname
-
+  
+  def full_name
+    self.name + " " + self.surname
+  end
 
 end
 

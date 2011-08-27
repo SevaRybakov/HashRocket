@@ -1,6 +1,6 @@
 .left
 	- unless current_user == @user
-		= link_to "Add friend"
+		= link_to "Add friend", 'friendship#send_request'
 #content
 	- if flash[:notice] or flash[:warning]
 		#notice
